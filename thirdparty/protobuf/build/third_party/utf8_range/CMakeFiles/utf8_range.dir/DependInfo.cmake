@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/third_party/utf8_range/utf8_range.c" "third_party/utf8_range/CMakeFiles/utf8_range.dir/utf8_range.c.o" "gcc" "third_party/utf8_range/CMakeFiles/utf8_range.dir/utf8_range.c.o.d"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/third_party/utf8_range/utf8_range.c" "third_party/utf8_range/CMakeFiles/utf8_range.dir/utf8_range.c.o" "gcc" "third_party/utf8_range/CMakeFiles/utf8_range.dir/utf8_range.c.o.d"
   )
 
 # Targets to which this target links.

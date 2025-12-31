@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src/absl/debugging/leak_check.cc" "_deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o" "gcc" "_deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o.d"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src/absl/debugging/leak_check.cc" "_deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o" "gcc" "_deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/leak_check.cc.o.d"
   )
 
 # Targets to which this target links.

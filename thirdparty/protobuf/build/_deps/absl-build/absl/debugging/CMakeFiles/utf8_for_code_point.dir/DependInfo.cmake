@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src/absl/debugging/internal/utf8_for_code_point.cc" "_deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o" "gcc" "_deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o.d"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src/absl/debugging/internal/utf8_for_code_point.cc" "_deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o" "gcc" "_deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/internal/utf8_for_code_point.cc.o.d"
   )
 
 # Targets to which this target links.

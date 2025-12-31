@@ -8,16 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src/absl/synchronization/internal/graphcycles.cc" "_deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o" "gcc" "_deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o.d"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src/absl/synchronization/internal/graphcycles.cc" "_deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o" "gcc" "_deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/base.dir/DependInfo.cmake"
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/DependInfo.cmake"
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/DependInfo.cmake"
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/spinlock_wait.dir/DependInfo.cmake"
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/log_severity.dir/DependInfo.cmake"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/base.dir/DependInfo.cmake"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/DependInfo.cmake"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/DependInfo.cmake"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/spinlock_wait.dir/DependInfo.cmake"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build/absl/base/CMakeFiles/log_severity.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

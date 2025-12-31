@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src
-BuildDirectory: /home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-build
+SourceDirectory: /home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src
+BuildDirectory: /home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: kinetic-virtual-machine
+Site: nan-virtual-machine
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -21,14 +21,13 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/bin/cmake" "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src"
-MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/bin/cmake" "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src"
+MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -64,7 +63,7 @@ UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/c++
-CompilerVersion: 9.4.0
+CompilerVersion: 11.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -76,7 +75,7 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: /usr/local/cuda/bin/cuda-memcheck
+MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kinetic/project/mprpc/thirdparty/protobuf/build/_deps/absl-src/absl/profiling/internal/exponential_biased.cc" "_deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/internal/exponential_biased.cc.o" "gcc" "_deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/internal/exponential_biased.cc.o.d"
+  "/home/nan/project/mprpc/mprpc-study/thirdparty/protobuf/build/_deps/absl-src/absl/profiling/internal/exponential_biased.cc" "_deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/internal/exponential_biased.cc.o" "gcc" "_deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/internal/exponential_biased.cc.o.d"
   )
 
 # Targets to which this target links.
