@@ -1,0 +1,122 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-u4F8rF
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a9e18/fast && /usr/bin/make  -f CMakeFiles/cmTC_a9e18.dir/build.make CMakeFiles/cmTC_a9e18.dir/build
+make[1]: 进入目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-u4F8rF”
+Building C object CMakeFiles/cmTC_a9e18.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a9e18.dir/src.c.o -c /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-u4F8rF/src.c
+Linking C executable cmTC_a9e18
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9e18.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a9e18.dir/src.c.o -o cmTC_a9e18 
+CMakeFiles/cmTC_a9e18.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x67)：对‘pthread_join’未定义的引用
+src.c:(.text+0x7b)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a9e18.dir/build.make:98: recipe for target 'cmTC_a9e18' failed
+make[1]: *** [cmTC_a9e18] Error 1
+make[1]: 离开目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-u4F8rF”
+Makefile:127: recipe for target 'cmTC_a9e18/fast' failed
+make: *** [cmTC_a9e18/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rt0mMr
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c7eb/fast && /usr/bin/make  -f CMakeFiles/cmTC_3c7eb.dir/build.make CMakeFiles/cmTC_3c7eb.dir/build
+make[1]: 进入目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rt0mMr”
+Building C object CMakeFiles/cmTC_3c7eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_3c7eb.dir/CheckFunctionExists.c.o -c /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rt0mMr/CheckFunctionExists.c
+Linking C executable cmTC_3c7eb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c7eb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_3c7eb.dir/CheckFunctionExists.c.o -o cmTC_3c7eb  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3c7eb.dir/build.make:98: recipe for target 'cmTC_3c7eb' failed
+make[1]: *** [cmTC_3c7eb] Error 1
+make[1]: 离开目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rt0mMr”
+Makefile:127: recipe for target 'cmTC_3c7eb/fast' failed
+make: *** [cmTC_3c7eb/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test ABSL_INTERNAL_AT_LEAST_CXX17 failed with the following output:
+Change Dir: /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-l0JNRc
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d6586/fast && /usr/bin/make  -f CMakeFiles/cmTC_d6586.dir/build.make CMakeFiles/cmTC_d6586.dir/build
+make[1]: 进入目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-l0JNRc”
+Building CXX object CMakeFiles/cmTC_d6586.dir/src.cxx.o
+/usr/bin/c++ -DABSL_INTERNAL_AT_LEAST_CXX17   -o CMakeFiles/cmTC_d6586.dir/src.cxx.o -c /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-l0JNRc/src.cxx
+/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-l0JNRc/src.cxx:6:4: error: #error "The compiler defaults or is configured for C++ < 17"
+    6 | #  error "The compiler defaults or is configured for C++ < 17"
+      |    ^~~~~
+CMakeFiles/cmTC_d6586.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_d6586.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d6586.dir/src.cxx.o] Error 1
+make[1]: 离开目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-l0JNRc”
+Makefile:127: recipe for target 'cmTC_d6586/fast' failed
+make: *** [cmTC_d6586/fast] Error 2
+
+
+Source file was:
+#ifdef _MSC_VER
+#  if _MSVC_LANG < 201703L
+#    error "The compiler defaults or is configured for C++ < 17"
+#  endif
+#elif __cplusplus < 201703L
+#  error "The compiler defaults or is configured for C++ < 17"
+#endif
+int main() { return 0; }
+
+
+Performing C++ SOURCE FILE Test ABSL_INTERNAL_AT_LEAST_CXX20 failed with the following output:
+Change Dir: /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rcMgMo
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1c79/fast && /usr/bin/make  -f CMakeFiles/cmTC_e1c79.dir/build.make CMakeFiles/cmTC_e1c79.dir/build
+make[1]: 进入目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rcMgMo”
+Building CXX object CMakeFiles/cmTC_e1c79.dir/src.cxx.o
+/usr/bin/c++ -DABSL_INTERNAL_AT_LEAST_CXX20   -o CMakeFiles/cmTC_e1c79.dir/src.cxx.o -c /home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rcMgMo/src.cxx
+/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rcMgMo/src.cxx:6:4: error: #error "The compiler defaults or is configured for C++ < 20"
+    6 | #  error "The compiler defaults or is configured for C++ < 20"
+      |    ^~~~~
+CMakeFiles/cmTC_e1c79.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_e1c79.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_e1c79.dir/src.cxx.o] Error 1
+make[1]: 离开目录“/home/kinetic/project/mprpc/thirdparty/protobuf/build/CMakeFiles/CMakeScratch/TryCompile-rcMgMo”
+Makefile:127: recipe for target 'cmTC_e1c79/fast' failed
+make: *** [cmTC_e1c79/fast] Error 2
+
+
+Source file was:
+#ifdef _MSC_VER
+#  if _MSVC_LANG < 202002L
+#    error "The compiler defaults or is configured for C++ < 20"
+#  endif
+#elif __cplusplus < 202002L
+#  error "The compiler defaults or is configured for C++ < 20"
+#endif
+int main() { return 0; }
+
+
