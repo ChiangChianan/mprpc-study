@@ -1,5 +1,5 @@
-#include "test.pb.h"
 #include <iostream>
+#include "test.pb.h"
 
 int main() {
   proto_test::LoginResponse rep;
@@ -13,12 +13,12 @@ int main() {
   proto_test::User *usr1 = rsp.add_friend_list();
 
   usr1->set_age(15);
-  usr1->set_gender(proto_test::GENDER_MALE);
+  usr1->set_gender(proto_test::MALE);
   usr1->set_name("张三");
 
   proto_test::User *usr2 = rsp.add_friend_list();
   usr2->set_age(16);
-  usr2->set_gender(proto_test::GENDER_MALE);
+  usr2->set_gender(proto_test::MALE);
   usr2->set_name("李四");
 
   std::string repstr;

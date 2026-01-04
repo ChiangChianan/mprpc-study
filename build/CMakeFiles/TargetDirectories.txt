@@ -1,0 +1,10 @@
+/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles/edit_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles/rebuild_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/example/CMakeFiles/edit_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/example/CMakeFiles/rebuild_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/example/callee/CMakeFiles/user_service.dir
+/home/kinetic/project/mprpc/mprpc-study/build/example/callee/CMakeFiles/edit_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/src/CMakeFiles/mprpc.dir
+/home/kinetic/project/mprpc/mprpc-study/build/src/CMakeFiles/edit_cache.dir
+/home/kinetic/project/mprpc/mprpc-study/build/src/CMakeFiles/rebuild_cache.dir

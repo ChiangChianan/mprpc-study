@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/user_service.dir/user_service.cpp.o CMakeFiles/user_service.dir/__/user.pb.cc.o CMakeFiles/user_service.dir/__/__/src/rpc_provider.cpp.o -o ../../bin/user_service  -Wl,-rpath,/home/kinetic/project/mprpc/mprpc-study/build/bin ../../bin/libmprpc.so -lprotobuf 
