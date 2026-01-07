@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.25)
 project(mprpc-study)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(MUDUO_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/thirdparty/muduo-master)
+set(MUDUO_LIBRARY_DIR ${CMAKE_SOURCE_DIR}/thirdparty/muduo-master/build/lib)
+
 
 add_subdirectory(example)
 add_subdirectory(src)

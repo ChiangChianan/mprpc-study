@@ -97,19 +97,51 @@ src/CMakeFiles/mprpc.dir/mprpc_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_config.cpp.s"
 	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kinetic/project/mprpc/mprpc-study/src/mprpc_config.cpp -o CMakeFiles/mprpc.dir/mprpc_config.cpp.s
 
+src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o: /home/kinetic/project/mprpc/mprpc-study/src/rpc_provider.cpp
+src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o -MF CMakeFiles/mprpc.dir/rpc_provider.cpp.o.d -o CMakeFiles/mprpc.dir/rpc_provider.cpp.o -c /home/kinetic/project/mprpc/mprpc-study/src/rpc_provider.cpp
+
+src/CMakeFiles/mprpc.dir/rpc_provider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpc_provider.cpp.i"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kinetic/project/mprpc/mprpc-study/src/rpc_provider.cpp > CMakeFiles/mprpc.dir/rpc_provider.cpp.i
+
+src/CMakeFiles/mprpc.dir/rpc_provider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpc_provider.cpp.s"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kinetic/project/mprpc/mprpc-study/src/rpc_provider.cpp -o CMakeFiles/mprpc.dir/rpc_provider.cpp.s
+
+src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o: /home/kinetic/project/mprpc/mprpc-study/src/rpc_header.pb.cc
+src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o -MF CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.d -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.o -c /home/kinetic/project/mprpc/mprpc-study/src/rpc_header.pb.cc
+
+src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpc_header.pb.cc.i"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kinetic/project/mprpc/mprpc-study/src/rpc_header.pb.cc > CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
+
+src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpc_header.pb.cc.s"
+	cd /home/kinetic/project/mprpc/mprpc-study/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kinetic/project/mprpc/mprpc-study/src/rpc_header.pb.cc -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
+
 # Object files for target mprpc
 mprpc_OBJECTS = \
 "CMakeFiles/mprpc.dir/mprpc_application.cpp.o" \
-"CMakeFiles/mprpc.dir/mprpc_config.cpp.o"
+"CMakeFiles/mprpc.dir/mprpc_config.cpp.o" \
+"CMakeFiles/mprpc.dir/rpc_provider.cpp.o" \
+"CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
 
 # External object files for target mprpc
 mprpc_EXTERNAL_OBJECTS =
 
 bin/libmprpc.so: src/CMakeFiles/mprpc.dir/mprpc_application.cpp.o
 bin/libmprpc.so: src/CMakeFiles/mprpc.dir/mprpc_config.cpp.o
+bin/libmprpc.so: src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o
+bin/libmprpc.so: src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
 bin/libmprpc.so: src/CMakeFiles/mprpc.dir/build.make
 bin/libmprpc.so: src/CMakeFiles/mprpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../bin/libmprpc.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kinetic/project/mprpc/mprpc-study/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../bin/libmprpc.so"
 	cd /home/kinetic/project/mprpc/mprpc-study/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mprpc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/mprpc.dir/mprpc_application.cpp.o.d"
   "CMakeFiles/mprpc.dir/mprpc_config.cpp.o"
   "CMakeFiles/mprpc.dir/mprpc_config.cpp.o.d"
+  "CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
+  "CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.d"
+  "CMakeFiles/mprpc.dir/rpc_provider.cpp.o"
+  "CMakeFiles/mprpc.dir/rpc_provider.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -178,6 +178,54 @@ mprpc_config.cpp.s:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cpp.s
 .PHONY : mprpc_config.cpp.s
 
+rpc_header.pb.o: rpc_header.pb.cc.o
+.PHONY : rpc_header.pb.o
+
+# target to build an object file
+rpc_header.pb.cc.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
+.PHONY : rpc_header.pb.cc.o
+
+rpc_header.pb.i: rpc_header.pb.cc.i
+.PHONY : rpc_header.pb.i
+
+# target to preprocess a source file
+rpc_header.pb.cc.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
+.PHONY : rpc_header.pb.cc.i
+
+rpc_header.pb.s: rpc_header.pb.cc.s
+.PHONY : rpc_header.pb.s
+
+# target to generate assembly for a file
+rpc_header.pb.cc.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
+.PHONY : rpc_header.pb.cc.s
+
+rpc_provider.o: rpc_provider.cpp.o
+.PHONY : rpc_provider.o
+
+# target to build an object file
+rpc_provider.cpp.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o
+.PHONY : rpc_provider.cpp.o
+
+rpc_provider.i: rpc_provider.cpp.i
+.PHONY : rpc_provider.i
+
+# target to preprocess a source file
+rpc_provider.cpp.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_provider.cpp.i
+.PHONY : rpc_provider.cpp.i
+
+rpc_provider.s: rpc_provider.cpp.s
+.PHONY : rpc_provider.s
+
+# target to generate assembly for a file
+rpc_provider.cpp.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_provider.cpp.s
+.PHONY : rpc_provider.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +241,12 @@ help:
 	@echo "... mprpc_config.o"
 	@echo "... mprpc_config.i"
 	@echo "... mprpc_config.s"
+	@echo "... rpc_header.pb.o"
+	@echo "... rpc_header.pb.i"
+	@echo "... rpc_header.pb.s"
+	@echo "... rpc_provider.o"
+	@echo "... rpc_provider.i"
+	@echo "... rpc_provider.s"
 .PHONY : help
 
 

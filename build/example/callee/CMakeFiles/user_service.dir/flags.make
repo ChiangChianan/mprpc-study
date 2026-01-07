@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kinetic/project/mprpc/mprpc-study/example -I/home/kinetic/project/mprpc/mprpc-study/include
+CXX_INCLUDES = -I/home/kinetic/project/mprpc/mprpc-study/example -I/home/kinetic/project/mprpc/mprpc-study/include -I/home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master
 
 CXX_FLAGS = 
 
