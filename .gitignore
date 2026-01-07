@@ -1,0 +1,48 @@
+# 构建输出
+build/
+cmake-build-*/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.xcodeproj
+*.xcworkspace
+
+# 编译产物
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.a
+*.lib
+*.out
+*.app
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# 自动生成的文件
+*.pb.cc
+*.pb.h
+*.pb.cc.o
+*.pb.cc.o.d
+
+# 日志
+*.log
+
+# 临时文件
+tmp/
+temp/
+
+# 系统文件
+Thumbs.db
