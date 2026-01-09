@@ -389,5 +389,6 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: \
  /usr/include/google/protobuf/repeated_field.h \
  /usr/include/google/protobuf/stubs/casts.h \
  /usr/include/google/protobuf/extension_set.h \
- /home/kinetic/project/mprpc/mprpc-study/example/user.pb.h \
- /usr/include/google/protobuf/service.h
+ /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
+ /usr/include/google/protobuf/service.h \
+ /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h

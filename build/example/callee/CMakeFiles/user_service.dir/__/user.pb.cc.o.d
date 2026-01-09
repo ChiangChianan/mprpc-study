@@ -1,7 +1,7 @@
 example/callee/CMakeFiles/user_service.dir/__/user.pb.cc.o: \
  /home/kinetic/project/mprpc/mprpc-study/example/user.pb.cc \
  /usr/include/stdc-predef.h \
- /home/kinetic/project/mprpc/mprpc-study/example/user.pb.h \
+ /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

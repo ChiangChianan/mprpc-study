@@ -24,7 +24,7 @@ class UserService : public example::UserServiceRpc {  // rpc服务发布者
       response->mutable_result()->set_error_message("");
     } else {
       response->mutable_result()->set_error_code(1);
-      response->mutable_result()->set_error_message("failed");
+      response->mutable_result()->set_error_message("login failed");
     }
     done->Run();
   }

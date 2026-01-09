@@ -1,4 +1,5 @@
 #include "rpc_provider.h"
+#include <arpa/inet.h>
 
 void RpcProvider::NotifyService(google::protobuf::Service* service) {
   ServiceInfo service_info;
@@ -50,13 +51,45 @@ void RpcProvider::OnConnection(const muduo::net::TcpConnectionPtr& conn) {
   }
 }
 
-// 已建立用户的读写事件回调，如果远程有一个rpc请求，则会OnMessage方法则会回应。
+/**
+ * @brief RPC服务端的消息处理回调函数
+ *
+ * 当接收到客户端发送的RPC请求消息时被调用。负责解析RPC请求协议、
+ * 查找对应的服务方法、执行RPC调用并设置响应回调。
+ *
+ * 协议格式说明:
+ * +------------+-------------+----------------+
+ * | 4字节头长度 | 头部数据    | 参数数据       |
+ * +------------+-------------+----------------+
+ * | head_size  | rpc_header  | args_str       |
+ * +------------+-------------+----------------+
+ *
+ * 头部数据为Protobuf序列化的RpcHeader消息，包含:
+ * - service_name: 服务名
+ * - method_name: 方法名
+ * - args_size: 参数数据长度
+ *
+ * @param conn 当前TCP连接指针，用于后续发送响应
+ * @param buffer 接收缓冲区，包含完整的RPC请求数据
+ * @param time 接收到消息的时间戳（用于调试和监控）
+ */
+
 void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
                             muduo::net::Buffer* buffer, muduo::Timestamp time) {
   std::string rev_buf = buffer->retrieveAllAsString();
   // 读取字节流前4个字节的内容 (注，可能要进行字节序的转换)
   uint32_t head_size = 0;
   rev_buf.copy((char*)&head_size, 4, 0);
+
+  // head_size = ntohl(head_size);  // 添加这行，网络字节序转主机字节序
+  // 3. 检查数据完整性（防止粘包/拆包问题）
+  if (rev_buf.size() < 4 + head_size) {
+    std::cout << "Incomplete packet received, expected header size: "
+              << head_size << ", but got: " << rev_buf.size() - 4 << std::endl;
+    // TODO: 可以考虑关闭连接或等待更多数据
+    return;
+  }
+
   // 根据head_size读取数据头的原始字节流，反序列化数据，得到rpc请求的详细内容
   std::string rpc_header_str = rev_buf.substr(4, head_size);
   mprpc::RpcHeader rpc_header;
@@ -71,14 +104,25 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
     std::cout << "rpc_header_str:" << rpc_header_str << "parse error!"
               << std::endl;
   }
+
+  // 检查是否有完整的参数数据
+  if (rev_buf.size() < 4 + head_size + args_size) {
+    std::cout << "Incomplete args data received, expected args size: "
+              << args_size << ", but got: " << rev_buf.size() - 4 - head_size
+              << std::endl;
+    return;
+  }
+
   // 获取剩下的参数信息
   std::string args_str = rev_buf.substr(4 + head_size, args_size);
   // 打印调试信息
+  std::cout << "====================================" << std::endl;
   std::cout << "head_size: " << head_size << std::endl;
   std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
   std::cout << "service_name: " << service_name << std::endl;
   std::cout << "method_name: " << method_name << std::endl;
   std::cout << "args_size: " << args_size << std::endl;
+  std::cout << "====================================" << std::endl;
 
   auto service_iter = service_map_.find(service_name);
   if (service_iter == service_map_.end()) {
@@ -127,6 +171,5 @@ void RpcProvider::SendRpcResponse(
   } else {
     std::cout << "serialize response_str error" << std::endl;
   }
-
   conn->shutdown();
 }

@@ -455,12 +455,13 @@ example/callee/CMakeFiles/user_service.dir/__/__/src/rpc_provider.cpp.o: /home/k
   /usr/include/google/protobuf/repeated_field.h \
   /usr/include/google/protobuf/stubs/casts.h \
   /usr/include/google/protobuf/extension_set.h \
-  /home/kinetic/project/mprpc/mprpc-study/example/user.pb.h \
-  /usr/include/google/protobuf/service.h
+  /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
+  /usr/include/google/protobuf/service.h \
+  /usr/include/arpa/inet.h
 
 example/callee/CMakeFiles/user_service.dir/__/user.pb.cc.o: /home/kinetic/project/mprpc/mprpc-study/example/user.pb.cc \
   /usr/include/stdc-predef.h \
-  /home/kinetic/project/mprpc/mprpc-study/example/user.pb.h \
+  /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
   /usr/include/c++/9/string \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -1197,8 +1198,9 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: /home/kinetic/pro
   /usr/include/google/protobuf/repeated_field.h \
   /usr/include/google/protobuf/stubs/casts.h \
   /usr/include/google/protobuf/extension_set.h \
-  /home/kinetic/project/mprpc/mprpc-study/example/user.pb.h \
-  /usr/include/google/protobuf/service.h
+  /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
+  /usr/include/google/protobuf/service.h \
+  /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h
 
 
 /home/kinetic/project/mprpc/mprpc-study/example/callee/user_service.cpp:
@@ -1210,6 +1212,8 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: /home/kinetic/pro
 /usr/include/google/protobuf/wire_format_lite_inl.h:
 
 /home/kinetic/project/mprpc/mprpc-study/example/user.pb.cc:
+
+/usr/include/arpa/inet.h:
 
 /usr/include/google/protobuf/stubs/casts.h:
 
@@ -1451,6 +1455,8 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: /home/kinetic/pro
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+/home/kinetic/project/mprpc/mprpc-study/include/user.pb.h:
+
 /usr/include/google/protobuf/stubs/mutex.h:
 
 /usr/include/boost/config/workaround.hpp:
@@ -1496,8 +1502,6 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: /home/kinetic/pro
 /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/base/CurrentThread.h:
 
 /usr/include/c++/9/string:
-
-/home/kinetic/project/mprpc/mprpc-study/example/user.pb.h:
 
 /usr/include/google/protobuf/stubs/macros.h:
 

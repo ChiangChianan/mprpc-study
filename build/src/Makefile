@@ -178,6 +178,30 @@ mprpc_config.cpp.s:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cpp.s
 .PHONY : mprpc_config.cpp.s
 
+rpc_consumer.o: rpc_consumer.cpp.o
+.PHONY : rpc_consumer.o
+
+# target to build an object file
+rpc_consumer.cpp.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_consumer.cpp.o
+.PHONY : rpc_consumer.cpp.o
+
+rpc_consumer.i: rpc_consumer.cpp.i
+.PHONY : rpc_consumer.i
+
+# target to preprocess a source file
+rpc_consumer.cpp.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_consumer.cpp.i
+.PHONY : rpc_consumer.cpp.i
+
+rpc_consumer.s: rpc_consumer.cpp.s
+.PHONY : rpc_consumer.s
+
+# target to generate assembly for a file
+rpc_consumer.cpp.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_consumer.cpp.s
+.PHONY : rpc_consumer.cpp.s
+
 rpc_header.pb.o: rpc_header.pb.cc.o
 .PHONY : rpc_header.pb.o
 
@@ -241,6 +265,9 @@ help:
 	@echo "... mprpc_config.o"
 	@echo "... mprpc_config.i"
 	@echo "... mprpc_config.s"
+	@echo "... rpc_consumer.o"
+	@echo "... rpc_consumer.i"
+	@echo "... rpc_consumer.s"
 	@echo "... rpc_header.pb.o"
 	@echo "... rpc_header.pb.i"
 	@echo "... rpc_header.pb.s"
