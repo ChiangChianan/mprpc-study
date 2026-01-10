@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kinetic/project/mprpc/mprpc-study/src/mprpc_application.cpp" "src/CMakeFiles/mprpc.dir/mprpc_application.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpc_application.cpp.o.d"
   "/home/kinetic/project/mprpc/mprpc-study/src/mprpc_config.cpp" "src/CMakeFiles/mprpc.dir/mprpc_config.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpc_config.cpp.o.d"
+  "/home/kinetic/project/mprpc/mprpc-study/src/mprpc_controller.cpp" "src/CMakeFiles/mprpc.dir/mprpc_controller.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpc_controller.cpp.o.d"
+  "/home/kinetic/project/mprpc/mprpc-study/src/mprpc_logger.cpp" "src/CMakeFiles/mprpc.dir/mprpc_logger.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpc_logger.cpp.o.d"
   "/home/kinetic/project/mprpc/mprpc-study/src/rpc_consumer.cpp" "src/CMakeFiles/mprpc.dir/rpc_consumer.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/rpc_consumer.cpp.o.d"
   "/home/kinetic/project/mprpc/mprpc-study/src/rpc_header.pb.cc" "src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.d"
   "/home/kinetic/project/mprpc/mprpc-study/src/rpc_provider.cpp" "src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o" "gcc" "src/CMakeFiles/mprpc.dir/rpc_provider.cpp.o.d"

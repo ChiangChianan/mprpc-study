@@ -1,8 +1,9 @@
 #include "rpc_consumer.h"
-#include <mprpc_application.h>
 #include <netdb.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include "mprpc_application.h"
+#include "mprpc_controller.h"
 
 // 发送消息
 void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
@@ -21,7 +22,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
   if (request->SerializeToString(&args_str)) {
     args_size = args_str.size();
   } else {
-    std::cout << "serialize request error!" << std::endl;
+    controller->SetFailed("serialize request error!");
     return;
   }
 
@@ -35,7 +36,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
   if (rpc_header.SerializeToString(&rpc_header_str)) {
     rpc_header_size = rpc_header_str.size();
   } else {
-    std::cout << "serialize rpc_header error!" << std::endl;
+    controller->SetFailed("serialize rpc_header error!");
     return;
   }
 
@@ -62,8 +63,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
   std::string response_str =
       SendAndReceiveMessage(ip.c_str(), port.c_str(), send_buffer);
   if (!response->ParseFromString(response_str)) {
-    std::cout << "parse response error! response str:" << response_str
-              << std::endl;
+    controller->SetFailed("parse response error!");
   }
 }
 

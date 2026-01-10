@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example;
+
+option cc_generic_services = true;
+
+message ResultCode{
+  int32 error_code = 1;
+  string error_message = 2;
+}
+
+message GetFriendListRequest{
+  uint32 user_id = 1;
+}
+
+message GetFriendListResponse{
+  ResultCode result = 1;
+  repeated string friends = 2;
+}
+
+
+// 好友服务，提供用户好友相关的操作，如获取好友列表
+service FriendServiceRpc{
+  // 获取好友列表，输入用户名，密码，返回好友列表
+  rpc GetFriendList(GetFriendListRequest)returns(GetFriendListResponse);
+}

@@ -178,6 +178,54 @@ mprpc_config.cpp.s:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cpp.s
 .PHONY : mprpc_config.cpp.s
 
+mprpc_controller.o: mprpc_controller.cpp.o
+.PHONY : mprpc_controller.o
+
+# target to build an object file
+mprpc_controller.cpp.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cpp.o
+.PHONY : mprpc_controller.cpp.o
+
+mprpc_controller.i: mprpc_controller.cpp.i
+.PHONY : mprpc_controller.i
+
+# target to preprocess a source file
+mprpc_controller.cpp.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cpp.i
+.PHONY : mprpc_controller.cpp.i
+
+mprpc_controller.s: mprpc_controller.cpp.s
+.PHONY : mprpc_controller.s
+
+# target to generate assembly for a file
+mprpc_controller.cpp.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cpp.s
+.PHONY : mprpc_controller.cpp.s
+
+mprpc_logger.o: mprpc_logger.cpp.o
+.PHONY : mprpc_logger.o
+
+# target to build an object file
+mprpc_logger.cpp.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_logger.cpp.o
+.PHONY : mprpc_logger.cpp.o
+
+mprpc_logger.i: mprpc_logger.cpp.i
+.PHONY : mprpc_logger.i
+
+# target to preprocess a source file
+mprpc_logger.cpp.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_logger.cpp.i
+.PHONY : mprpc_logger.cpp.i
+
+mprpc_logger.s: mprpc_logger.cpp.s
+.PHONY : mprpc_logger.s
+
+# target to generate assembly for a file
+mprpc_logger.cpp.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_logger.cpp.s
+.PHONY : mprpc_logger.cpp.s
+
 rpc_consumer.o: rpc_consumer.cpp.o
 .PHONY : rpc_consumer.o
 
@@ -265,6 +313,12 @@ help:
 	@echo "... mprpc_config.o"
 	@echo "... mprpc_config.i"
 	@echo "... mprpc_config.s"
+	@echo "... mprpc_controller.o"
+	@echo "... mprpc_controller.i"
+	@echo "... mprpc_controller.s"
+	@echo "... mprpc_logger.o"
+	@echo "... mprpc_logger.i"
+	@echo "... mprpc_logger.s"
 	@echo "... rpc_consumer.o"
 	@echo "... rpc_consumer.i"
 	@echo "... rpc_consumer.s"

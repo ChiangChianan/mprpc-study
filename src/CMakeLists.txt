@@ -1,5 +1,12 @@
-add_library(mprpc SHARED mprpc_application.cpp mprpc_config.cpp
-                         rpc_provider.cpp rpc_header.pb.cc rpc_consumer.cpp)
+add_library(
+  mprpc SHARED
+  mprpc_application.cpp
+  mprpc_config.cpp
+  rpc_provider.cpp
+  rpc_header.pb.cc
+  rpc_consumer.cpp
+  mprpc_controller.cpp
+  mprpc_logger.cpp)
 
 target_include_directories(
   mprpc PUBLIC ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/example

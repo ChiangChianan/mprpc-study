@@ -130,12 +130,27 @@ user_service/fast:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/user_service.dir/build.make example/callee/CMakeFiles/user_service.dir/build
 .PHONY : user_service/fast
 
+# Convenience name for target.
+example/callee/CMakeFiles/friend_service.dir/rule:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/friend_service.dir/rule
+.PHONY : example/callee/CMakeFiles/friend_service.dir/rule
+
+# Convenience name for target.
+friend_service: example/callee/CMakeFiles/friend_service.dir/rule
+.PHONY : friend_service
+
+# fast build rule for target.
+friend_service/fast:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/build
+.PHONY : friend_service/fast
+
 __/__/src/rpc_provider.o: __/__/src/rpc_provider.cpp.o
 .PHONY : __/__/src/rpc_provider.o
 
 # target to build an object file
 __/__/src/rpc_provider.cpp.o:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/user_service.dir/build.make example/callee/CMakeFiles/user_service.dir/__/__/src/rpc_provider.cpp.o
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/__/src/rpc_provider.cpp.o
 .PHONY : __/__/src/rpc_provider.cpp.o
 
 __/__/src/rpc_provider.i: __/__/src/rpc_provider.cpp.i
@@ -144,6 +159,7 @@ __/__/src/rpc_provider.i: __/__/src/rpc_provider.cpp.i
 # target to preprocess a source file
 __/__/src/rpc_provider.cpp.i:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/user_service.dir/build.make example/callee/CMakeFiles/user_service.dir/__/__/src/rpc_provider.cpp.i
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/__/src/rpc_provider.cpp.i
 .PHONY : __/__/src/rpc_provider.cpp.i
 
 __/__/src/rpc_provider.s: __/__/src/rpc_provider.cpp.s
@@ -152,7 +168,32 @@ __/__/src/rpc_provider.s: __/__/src/rpc_provider.cpp.s
 # target to generate assembly for a file
 __/__/src/rpc_provider.cpp.s:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/user_service.dir/build.make example/callee/CMakeFiles/user_service.dir/__/__/src/rpc_provider.cpp.s
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/__/src/rpc_provider.cpp.s
 .PHONY : __/__/src/rpc_provider.cpp.s
+
+__/friend.pb.o: __/friend.pb.cc.o
+.PHONY : __/friend.pb.o
+
+# target to build an object file
+__/friend.pb.cc.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/friend.pb.cc.o
+.PHONY : __/friend.pb.cc.o
+
+__/friend.pb.i: __/friend.pb.cc.i
+.PHONY : __/friend.pb.i
+
+# target to preprocess a source file
+__/friend.pb.cc.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/friend.pb.cc.i
+.PHONY : __/friend.pb.cc.i
+
+__/friend.pb.s: __/friend.pb.cc.s
+.PHONY : __/friend.pb.s
+
+# target to generate assembly for a file
+__/friend.pb.cc.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/__/friend.pb.cc.s
+.PHONY : __/friend.pb.cc.s
 
 __/user.pb.o: __/user.pb.cc.o
 .PHONY : __/user.pb.o
@@ -177,6 +218,30 @@ __/user.pb.s: __/user.pb.cc.s
 __/user.pb.cc.s:
 	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/user_service.dir/build.make example/callee/CMakeFiles/user_service.dir/__/user.pb.cc.s
 .PHONY : __/user.pb.cc.s
+
+friend_service.o: friend_service.cpp.o
+.PHONY : friend_service.o
+
+# target to build an object file
+friend_service.cpp.o:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/friend_service.cpp.o
+.PHONY : friend_service.cpp.o
+
+friend_service.i: friend_service.cpp.i
+.PHONY : friend_service.i
+
+# target to preprocess a source file
+friend_service.cpp.i:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/friend_service.cpp.i
+.PHONY : friend_service.cpp.i
+
+friend_service.s: friend_service.cpp.s
+.PHONY : friend_service.s
+
+# target to generate assembly for a file
+friend_service.cpp.s:
+	cd /home/kinetic/project/mprpc/mprpc-study/build && $(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/friend_service.cpp.s
+.PHONY : friend_service.cpp.s
 
 user_service.o: user_service.cpp.o
 .PHONY : user_service.o
@@ -210,13 +275,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... friend_service"
 	@echo "... user_service"
 	@echo "... __/__/src/rpc_provider.o"
 	@echo "... __/__/src/rpc_provider.i"
 	@echo "... __/__/src/rpc_provider.s"
+	@echo "... __/friend.pb.o"
+	@echo "... __/friend.pb.i"
+	@echo "... __/friend.pb.s"
 	@echo "... __/user.pb.o"
 	@echo "... __/user.pb.i"
 	@echo "... __/user.pb.s"
+	@echo "... friend_service.o"
+	@echo "... friend_service.i"
+	@echo "... friend_service.s"
 	@echo "... user_service.o"
 	@echo "... user_service.i"
 	@echo "... user_service.s"

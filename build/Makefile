@@ -130,6 +130,19 @@ user_service/fast:
 .PHONY : user_service/fast
 
 #=============================================================================
+# Target rules for targets named friend_service
+
+# Build rule for target.
+friend_service: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 friend_service
+.PHONY : friend_service
+
+# fast build rule for target.
+friend_service/fast:
+	$(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/friend_service.dir/build.make example/callee/CMakeFiles/friend_service.dir/build
+.PHONY : friend_service/fast
+
+#=============================================================================
 # Target rules for targets named user_client
 
 # Build rule for target.
@@ -141,6 +154,19 @@ user_client: cmake_check_build_system
 user_client/fast:
 	$(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/user_client.dir/build.make example/caller/CMakeFiles/user_client.dir/build
 .PHONY : user_client/fast
+
+#=============================================================================
+# Target rules for targets named friend_client
+
+# Build rule for target.
+friend_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 friend_client
+.PHONY : friend_client
+
+# fast build rule for target.
+friend_client/fast:
+	$(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/friend_client.dir/build.make example/caller/CMakeFiles/friend_client.dir/build
+.PHONY : friend_client/fast
 
 #=============================================================================
 # Target rules for targets named mprpc
@@ -163,6 +189,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... friend_client"
+	@echo "... friend_service"
 	@echo "... mprpc"
 	@echo "... user_client"
 	@echo "... user_service"

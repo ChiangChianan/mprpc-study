@@ -8,12 +8,16 @@
 #include "muduo/net/InetAddress.h"
 #include "muduo/net/TcpServer.h"
 #include "rpc_header.pb.h"
-#include "user.pb.h"
+
+// 添加 Protobuf Service 头文件
+#include <google/protobuf/descriptor.h>
+#include <google/protobuf/message.h>
+#include <google/protobuf/service.h>
 
 // 框架提供的专门发布rpc服务的网络对象类
 class RpcProvider {
  public:
-  void NotifyService(google::protobuf::Service* server);
+  void NotifyService(::google::protobuf::Service* server);
   void Run();
 
  private:
@@ -21,8 +25,8 @@ class RpcProvider {
   muduo::net::EventLoop event_loop_;
   // 服务信息类
   struct ServiceInfo {
-    google::protobuf::Service* service;
-    std::unordered_map<std::string, const google::protobuf::MethodDescriptor*>
+    ::google::protobuf::Service* service;
+    std::unordered_map<std::string, const ::google::protobuf::MethodDescriptor*>
         method_map;
   };
   // 存储注册成功的服务对象以及服务方法
