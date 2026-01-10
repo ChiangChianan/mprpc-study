@@ -19,10 +19,23 @@ message LoginResponse{
   bool success = 2;
 }
 
+message RegisterRequest {
+  uint32 id = 1;
+  string name = 2;
+  string password = 3; 
+}
+
+message RegisterResponse{
+  ResultCode result = 1;
+  bool success = 2;
+}
+
 // 用户服务，提供用户相关的操作，如登录、注销等。
 service UserServiceRpc{
   // 用户登录，验证用户名和密码，返回登录结果
   rpc Login(LoginRequest)returns(LoginResponse);
+  // 用户注册，输入id，用户名，密码，返回注册结果
+  rpc Register(RegisterRequest)returns(RegisterResponse);
 }
 
 

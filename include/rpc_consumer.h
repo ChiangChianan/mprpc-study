@@ -3,7 +3,12 @@
 
 #include <iostream>
 #include "rpc_header.pb.h"
-#include "user.pb.h"
+
+// 添加 Protobuf Service 头文件
+#include <google/protobuf/descriptor.h>
+#include <google/protobuf/message.h>
+#include <google/protobuf/service.h>
+
 
 class MprpcChannel : public google::protobuf::RpcChannel {
  public:

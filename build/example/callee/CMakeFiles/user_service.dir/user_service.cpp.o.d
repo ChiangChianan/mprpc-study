@@ -141,21 +141,43 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: \
  /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/limits \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
+ /home/kinetic/project/mprpc/mprpc-study/include/mprpc_logger.h \
+ /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
+ /usr/include/c++/9/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/9/condition_variable /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/ctime \
+ /usr/include/c++/9/bits/parse_numbers.h \
+ /usr/include/c++/9/bits/std_mutex.h \
+ /usr/include/c++/9/bits/unique_lock.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/unique_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/allocated_ptr.h \
+ /usr/include/c++/9/bits/refwrap.h /usr/include/c++/9/fstream \
+ /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/mutex \
+ /usr/include/c++/9/queue /usr/include/c++/9/deque \
+ /usr/include/c++/9/bits/stl_construct.h \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
+ /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
+ /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_queue.h \
+ /usr/include/c++/9/thread /usr/include/c++/9/memory \
+ /usr/include/c++/9/bits/stl_tempbuf.h \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/backward/auto_ptr.h \
  /home/kinetic/project/mprpc/mprpc-study/include/rpc_provider.h \
  /home/kinetic/project/mprpc/mprpc-study/include/mprpc_application.h \
  /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/net/EventLoop.h \
- /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
- /usr/include/c++/9/bits/atomic_lockfree_defines.h \
- /usr/include/c++/9/functional /usr/include/c++/9/bits/refwrap.h \
- /usr/include/c++/9/bits/std_function.h /usr/include/c++/9/vector \
- /usr/include/c++/9/bits/stl_construct.h \
- /usr/include/c++/9/bits/stl_uninitialized.h \
- /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
  /usr/include/boost/any.hpp /usr/include/c++/9/algorithm \
  /usr/include/c++/9/bits/stl_algo.h \
  /usr/include/c++/9/bits/algorithmfwd.h \
- /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_tempbuf.h \
  /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
@@ -301,14 +323,6 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: \
  /usr/include/boost/operators.hpp /usr/include/c++/9/iterator \
  /usr/include/c++/9/bits/stream_iterator.h \
  /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/net/Callbacks.h \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
- /usr/include/c++/9/ext/concurrence.h \
- /usr/include/c++/9/bits/unique_ptr.h \
- /usr/include/c++/9/bits/shared_ptr.h \
- /usr/include/c++/9/bits/shared_ptr_base.h \
- /usr/include/c++/9/bits/allocated_ptr.h \
- /usr/include/c++/9/bits/shared_ptr_atomic.h \
- /usr/include/c++/9/backward/auto_ptr.h \
  /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/net/TimerId.h \
  /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/net/InetAddress.h \
  /home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master/muduo/base/StringPiece.h \
@@ -389,6 +403,5 @@ example/callee/CMakeFiles/user_service.dir/user_service.cpp.o: \
  /usr/include/google/protobuf/repeated_field.h \
  /usr/include/google/protobuf/stubs/casts.h \
  /usr/include/google/protobuf/extension_set.h \
- /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h \
  /usr/include/google/protobuf/service.h \
  /home/kinetic/project/mprpc/mprpc-study/include/user.pb.h
