@@ -130,6 +130,19 @@ user_service/fast:
 .PHONY : user_service/fast
 
 #=============================================================================
+# Target rules for targets named user_client
+
+# Build rule for target.
+user_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user_client
+.PHONY : user_client
+
+# fast build rule for target.
+user_client/fast:
+	$(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/user_client.dir/build.make example/caller/CMakeFiles/user_client.dir/build
+.PHONY : user_client/fast
+
+#=============================================================================
 # Target rules for targets named mprpc
 
 # Build rule for target.
@@ -151,6 +164,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mprpc"
+	@echo "... user_client"
 	@echo "... user_service"
 .PHONY : help
 

@@ -6,5 +6,5 @@ CXX_DEFINES = -Dmprpc_EXPORTS
 
 CXX_INCLUDES = -I/home/kinetic/project/mprpc/mprpc-study/include -I/home/kinetic/project/mprpc/mprpc-study/example -I/home/kinetic/project/mprpc/mprpc-study/thirdparty/muduo-master
 
-CXX_FLAGS = -fPIC
+CXX_FLAGS = -g -fPIC
 
