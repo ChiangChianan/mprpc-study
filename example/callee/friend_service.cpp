@@ -3,7 +3,7 @@
 #include "friend.pb.h"
 #include "mprpc_application.h"
 #include "mprpc_logger.h"
-#include "rpc_provider.h"
+#include "mprpc_provider.h"
 
 class FriendService : public example::FriendServiceRpc {
  public:

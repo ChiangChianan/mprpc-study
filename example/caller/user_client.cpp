@@ -1,7 +1,7 @@
 #include <iostream>
 #include "mprpc_application.h"
+#include "mprpc_consumer.h"
 #include "mprpc_logger.h"
-#include "rpc_consumer.h"
 #include "user.pb.h"
 
 int main(int argc, char** argv) {
@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
                  login_response.success() ? "true" : "false");
   } else {
     LOG_ERROR_FMT("rpc login response error: %s",
-                  login_response.result().error_message());
+                  login_response.result().error_message().c_str());
   }
 
   example::RegisterRequest register_request;
@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
                  register_response.success() ? "true" : "false");
   } else {
     LOG_ERROR_FMT("rpc register response error: %s",
-                  register_response.result().error_message());
+                  register_response.result().error_message().c_str());
   }
 
   return 0;

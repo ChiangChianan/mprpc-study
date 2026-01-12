@@ -1,7 +1,7 @@
 #include <iostream>
 #include "mprpc_application.h"
 #include "mprpc_logger.h"
-#include "rpc_provider.h"
+#include "mprpc_provider.h"
 #include "user.pb.h"
 
 class UserService : public ::example::UserServiceRpc {  // rpc服务发布者
