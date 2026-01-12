@@ -4,7 +4,7 @@
 #include "mprpc_application.h"
 #include "mprpc_controller.h"
 #include "mprpc_logger.h"
-#include "rpc_consumer.h"
+#include "mprpc_consumer.h"
 
 int main(int argc, char** argv) {
   MprpcLogger::GetInstance().Init();
